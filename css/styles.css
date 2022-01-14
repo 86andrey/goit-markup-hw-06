@@ -352,14 +352,6 @@ a.studia.current::after {
     left: 15px;
 }
 
-.form-fields-policy {
-    line-height: 1.71;
-}
-
-.form-fields-link {
- color: var(--accent-color);
-}
-
 .form-field textarea::placeholder {
     font-family: Roboto;
     font-style: normal;
@@ -401,6 +393,37 @@ textarea {
     fill: var(--accent-color);
 }
 
+.form-fields-policy {
+    line-height: 1.71;
+}
+
+.form-fields-link {
+ color: var(--accent-color);
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox:checked + .agree-lable {
+    background-image: url('/images/icon-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    border: hidden;
+}
+
+.agree-lable {
+    display: inline-block;
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 4px;
+}
+
 .form-button {
     display: flex;
     align-items: center;
@@ -428,7 +451,6 @@ textarea {
 .form-button:focus {
     background-color: #188CE8;
 }
-
 
 /* -------------------------------------ABOUT-------------------- */
 
