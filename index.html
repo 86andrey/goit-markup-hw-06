@@ -383,35 +383,50 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">                
             <button data-modal-close class="close-button" type="button">
-                <svg class="close-icon">
-                    <use href="./images/symbol-defs.svg#close-black"></use>
+                <svg width="11" height="11" class="close-icon">
+                    <use href="./images/icons.svg#close-black"></use>
                 </svg>
             </button>
             <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
             <form action="">
                 <ul>
                     <li class="form-field">
-                        <label for="name" class="form-label">Имя</label>
-                        <input type="text" name="name" id="name">
+                        <label for="name" class="form-label">Имя</label>                        
+                        <input class="input-name" type="text" name="name" id="name">
+                        <span class="form-icon">
+                            <svg  width="12" height="12" class="field-phone-icon">
+                                <use href="./images/icons.svg#person-black"></use>
+                            </svg>
+                        </span>
                     </li>
                     <li class="form-field"> 
                         <label for="tel" class="form-label">Телефон</label>
-                        <input type="text" name="tel" id="tel">
+                        <input class="input-name" type="text" name="tel" id="tel">
+                        <span class="form-icon">
+                            <svg width="13" height="13" class="field-phone-icon">
+                                <use href="./images/icons.svg#phone-black"></use>
+                            </svg>
+                        </span>
                     </li>
                     <li class="form-field">
                         <label for="mail" class="form-label">Почта</label>
-                        <input type="text" name="mail" id="mail">
+                        <input class="input-name" type="text" name="mail" id="mail">
+                        <span class="form-icon">
+                            <svg width="15" height="12" class="field-phone-icon">
+                                <use href="./images/icons.svg#email-black"></use>
+                            </svg>
+                        </span>
                     </li>
                     <li class="form-field">
                         <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        <textarea class="input-name" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </li>
                     <li class="form-fields">
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                        <input class="checkbox" type="checkbox" name="policy" id="policy">
+                        <label class="form-fields-policy" for="policy">Соглашаюсь с рассылкой и принимаю <a class="form-fields-link" href="">Условия договора</a></label>
                     </li>
                 </ul>
-                <button type="submit">Отправить</button>
+                <button class="form-button" type="submit">Отправить</button>
             </form>
 
 
