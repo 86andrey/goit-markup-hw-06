@@ -378,23 +378,38 @@
                    </li>
                </ul> 
             </div>
+            <div class="footer-join">
+                <h3 class="footer-join-text">Подпишитесь на рассылку</h3>
+                <ul class="input-list link">
+                    <li>
+                     <input class="input-sign" type="text" name="mail" placeholder="E-mail">
+                    </li>
+                    <li>
+                     <a class="footer-join-link" href="">
+                         <svg width="44" height="44" class="footer-join-icon">
+                             <use href="./images/icons.svg#twitter"></use>
+                         </svg>
+                     </a>
+                    </li>
+                </ul> 
+             </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">                
             <button data-modal-close class="close-button" type="button">
-                <svg width="11" height="11" class="close-icon">
+                <svg class="close-icon">
                     <use href="./images/icons.svg#close-black"></use>
                 </svg>
             </button>
             <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
             <form action="">
-                <ul>
+                <ul class="form-field-list">
                     <li class="form-field">
                         <label for="name" class="form-label">Имя</label>                        
                         <input class="input-name" type="text" name="name" id="name">
                         <span class="form-icon">
-                            <svg  width="12" height="12" class="field-phone-icon">
+                            <svg class="field-phone-icon">
                                 <use href="./images/icons.svg#person-black"></use>
                             </svg>
                         </span>
@@ -403,7 +418,7 @@
                         <label for="tel" class="form-label">Телефон</label>
                         <input class="input-name" type="text" name="tel" id="tel">
                         <span class="form-icon">
-                            <svg width="13" height="13" class="field-phone-icon">
+                            <svg class="field-phone-icon">
                                 <use href="./images/icons.svg#phone-black"></use>
                             </svg>
                         </span>
@@ -430,15 +445,6 @@
                 </ul>
                 <button class="form-button" type="submit">Отправить</button>
             </form>
-
-
-
-
-
-
-
-
-
         </div>
     </div>
     <script src="./js/modal.js"></script>
