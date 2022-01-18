@@ -391,15 +391,17 @@ textarea {
 }
 
 .form-field:hover .input-name,
-.form-field:focus .input-name {
+.form-field:focus-within .input-name {
     border-color: var(--accent-color);
 }
+
 .form-icon {
     background-size: contain;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover .form-icon {
+.form-field:hover .form-icon,
+.form-field:focus-within .form-icon {
     fill: var(--accent-color);
 }
 
