@@ -422,7 +422,7 @@ textarea {
 }
 
 .checkbox:checked + .agree-lable {
-    background-image: url('/images/icon-check.svg');
+    background-image: url('../images/icon-check.svg');
     background-size: contain;
     background-origin: border-box;
     border: hidden;
