@@ -730,7 +730,7 @@ textarea {
 }
 
 .footer-join {
-    margin-left: 70px;
+    margin-left: auto;
 }
 
 .footer-join-text {  
@@ -775,8 +775,6 @@ textarea {
 
 .input-join-icon {
     margin-left: 10px;
-    /* height: 20px;
-    width: 20px; */
     fill: var(--primary-white-color);
 }
 
