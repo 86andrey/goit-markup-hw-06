@@ -893,14 +893,6 @@ textarea {
     margin-bottom: 50px;
 }
 
-.potfolio-thumb {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    height: 294px;
-    width: 370px;
-}
-
 .portfolio-site {
     display: block; 
 }
@@ -912,27 +904,29 @@ textarea {
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list > .portfolio-site:hover .sublist,
-.portfolio-list > .portfolio-site:focus .sublist{
-    display: block;
+.portfolio-list > .portfolio-site:hover .sublist-text,
+.portfolio-list > .portfolio-site:focus .sublist-text{
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(0);
 }
 
-.sublist {
+.potfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.sublist-text {
     position: absolute;
     top: 0;
     left: 0;
     padding: 63px 24px;
     margin: 0;
-    background-color: var(--primary-white-color);
-    height: 294px;
+    height: 100%;
     width: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.sublist-text {
+    background-color: var(--primary-white-color);
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
